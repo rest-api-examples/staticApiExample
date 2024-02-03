@@ -5,7 +5,7 @@ Tehdään REST API sovellus, jossa ei käytetä tietokantaa, vaan data on statti
 <ol>
 <li>Luo kansio nimeltään staticExample</li>
 <li>Kopio expressExamplen tiedostot package.json ja app.js kansioon staticExample ja avaa komentohekote kansioon </li>
-<li>Anna komento npm istall</li>
+<li>Anna komento npm install</li>
 <li>Käynnistä sovellus komennolla nodemon app.js</li>
 <li>Lisää sovellukseen kansiot routes ja models</li>
 <li>Lisää routes kansioon tiedosto book.js ja siihen rivit
