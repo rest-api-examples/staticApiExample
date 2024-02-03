@@ -9,10 +9,12 @@ Tehdään REST API sovellus, jossa ei käytetä tietokantaa, vaan data on statti
 <li>Käynnistä sovellus komennolla nodemon app.js</li>
 <li>Lisää sovellukseen kansiot routes ja models</li>
 <li>Lisää routes kansioon tiedosto book.js ja siihen rivit
+<pre>
 const express = require('express');
 const router = express.Router();
 
 module.exports=router
+</pre>
 </li>
 <li>Lisää tiedostoon metodit 
     <ul>
