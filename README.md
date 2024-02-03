@@ -3,7 +3,7 @@
 Tehdään REST API sovellus, jossa ei käytetä tietokantaa, vaan data on stattisessa arrayssä, kuten aiemmissa esimerkeissä.
 
 <ol>
-<li>Luoka kansio nimeltään staticExample</li>
+<li>Luo kansio nimeltään staticExample</li>
 <li>Kopio expressExamplen tiedostot package.json ja app.js kansioon staticExample ja avaa komentohekote kansioon </li>
 <li>Anna komento npm istall</li>
 <li>Käynnistä sovellus komennolla nodemon app.js</li>
