@@ -42,7 +42,7 @@ module.exports=router
     <li>Muuta router.get kutsumaan modelin getAllBooks metodia argumenttina seuraava anonyymi funktio
     <pre>
     function(result){
-        response.send(result);
+        response.json(result);
     }
     </pre>
     </li>
