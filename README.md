@@ -36,7 +36,7 @@ module.exports=router
     <li>eksporttaa objekti book</li>
     </ul>
 </li>
-<li>Muuta sitten book-contrtolleria, niin että 
+<li>Muuta sitten book-controlleria, niin että 
     <ul>
     <li>Määritä objekti book, joka saadaan modelista</li>
     <li>Muuta router.get kutsumaan modelin getAllBooks metodia argumenttina seuraava anonyymi funktio
@@ -46,7 +46,8 @@ module.exports=router
     }
     </pre>
     </li>
-    <li>Testaa sovelluksen toimintaa ja muuta muutkin metodit</li>
     </ul>
 </li>
+    <li>Testaa sovelluksen toimintaa ja muuta muutkin metodit</li>
+
 </ol>
