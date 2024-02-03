@@ -26,7 +26,7 @@ module.exports=router
     </ul>
 </li>
 <li>Laita kuhunkin metodiin jokin teksti, jonka response palauttaa </li>
-<li>Muokkaa app.js niin, että sovellusesta löytyy endpoint http://localhost:3000/book</li>
+<li>Muokkaa app.js niin, että sovelluksesta löytyy endpoint http://localhost:3000/book</li>
 <li>Testaa kaikki metodit Postmanilla</li>
 <li>Lisää sitten models kansioon tiedosto book_model.js. Määritä tiedostossa  objekti book, jossa: 
     <ul>
