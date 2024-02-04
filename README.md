@@ -1,6 +1,6 @@
 # staticApiExample
 
-Tehdään REST API sovellus, jossa ei käytetä tietokantaa, vaan data on stattisessa arrayssä, kuten aiemmissa esimerkeissä.
+Tehdään REST API sovellus, jossa ei käytetä tietokantaa, vaan data on staattisessa arrayssä, kuten aiemmissa esimerkeissä.
 
 <ol>
 <li>Luo kansio nimeltään staticExample</li>
@@ -49,5 +49,19 @@ module.exports=router
     </ul>
 </li>
     <li>Testaa sovelluksen toimintaa ja muuta muutkin metodit</li>
-
 </ol>
+
+## Esimerkin tarkoitus
+
+Esimerkissä ei käytetä tietokantaa, jotta huomio keskittyisi controller-model tomintaan ja callbackien toimintaan.
+
+Sovelluksessa http-pyynnöt ottaa vastaan book-controller. Book-controller kutsuu book_modelin funtkiota, jolle se antaa argumenttina 
+<ul>
+<li><b>Aina anonyymin funktion</b>, joka aikaan lähettää responsena model-funktion luoman datan</li>
+<li>Mahdollisesti uuden tai muokattavan kirjan tiedot (request.body)</li>
+<li>Mahdollisesti kirjan id:n (request.params.id)</li>
+</ul>
+
+Book_modelin funktio tekee toimenpiteet (etsii, lisää, muokkaa, poista) ja asettaa sovitun datan callback-metodiin argumentiksi.
+
+Nyt kuitenkaan modelissa ei oikeasti kutsuta asynkroonisia funktioita, joten tässä ei tarvitsisi käyttää callbackeja. Kuitenkin sitten, kun data on tietokannassa, funktiot ovat asynkronisia ja callbackit ovat välttämättömiä.
