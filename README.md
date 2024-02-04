@@ -55,7 +55,7 @@ module.exports=router
 
 Esimerkissä ei käytetä tietokantaa, jotta huomio keskittyisi controller-model tomintaan ja callbackien toimintaan.
 
-Sovelluksessa http-pyynnöt ottaa vastaan book-controller. Book-controller kutsuu book_modelin funtkiota, jolle se antaa argumenttina seuraavaa:
+Sovelluksessa http-pyynnöt ottaa vastaan book-controller. Book-controller kutsuu book_modelin funktiota, jolle se antaa argumenttina seuraavaa:
 <ul>
 <li><b>Aina anonyymin funktion</b>, joka aikanaan lähettää responsena model-funktion luoman datan</li>
 <li>Mahdollisesti uuden tai muokattavan kirjan tiedot (request.body)</li>
