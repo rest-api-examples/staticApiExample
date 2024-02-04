@@ -57,11 +57,11 @@ Esimerkissä ei käytetä tietokantaa, jotta huomio keskittyisi controller-model
 
 Sovelluksessa http-pyynnöt ottaa vastaan book-controller. Book-controller kutsuu book_modelin funtkiota, jolle se antaa argumenttina seuraavaa:
 <ul>
-<li><b>Aina anonyymin funktion</b>, joka aikaan lähettää responsena model-funktion luoman datan</li>
+<li><b>Aina anonyymin funktion</b>, joka aikanaan lähettää responsena model-funktion luoman datan</li>
 <li>Mahdollisesti uuden tai muokattavan kirjan tiedot (request.body)</li>
 <li>Mahdollisesti kirjan id:n (request.params.id)</li>
 </ul>
 
-Book_modelin funktio tekee toimenpiteet (etsii, lisää, muokkaa, poista) ja asettaa sovitun datan callback-metodiin argumentiksi.
+Book_modelin funktio tekee toimenpiteet (etsii, lisää, muokkaa, poistaa) ja asettaa sovitun datan callback-metodiin argumentiksi.
 
 Nyt kuitenkaan modelissa ei oikeasti kutsuta asynkroonisia funktioita, joten tässä ei tarvitsisi käyttää callbackeja. Kuitenkin sitten, kun data on tietokannassa, funktiot ovat asynkronisia ja callbackit ovat välttämättömiä.
