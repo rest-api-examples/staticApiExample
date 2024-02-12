@@ -15,7 +15,9 @@ router.get('/:id',function(request, response){
 });
 
 router.post('/',function(request,response){
-    response.json("Lisätään kirja");
+    book.addBook(request.body,function(result){
+        response.json(result);
+    });
 });
 
 router.put('/:id',function(request, response){

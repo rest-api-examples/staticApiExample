@@ -7,7 +7,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 app.listen(port, function(){
-console.log("Express esimerkki portissa "+port);
+    console.log("Express esimerkki portissa "+port);
 });
 
 app.get('/',function(request,response){

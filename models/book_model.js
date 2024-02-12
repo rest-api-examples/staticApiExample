@@ -9,6 +9,13 @@ const book={
     },
     getOneBook(id, callback){
         callback(this.bookArray[id]);
+    },
+    addBook(insertData, callback){
+        //tässä on SQL-injektio
+        //datan lisäämiseen on käytettävä
+        //binded parameters menetelmää
+        const sql="insert into book values("+insertData.id_book+","+insertData.name+")";
+        callback(sql);
     }
 }
 
